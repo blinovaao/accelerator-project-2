@@ -1,7 +1,3 @@
-.navigation {
-  display: contents;
-}
-
 .navigation__list {
   @include list-style;
 
@@ -35,7 +31,13 @@
 
   display: inline-block;
 
+  @media (min-width: $tablet) {
+    margin: 3px 0 0;
+  }
+
   @media (min-width: $desktop) {
     display: none;
+
+    margin: 0;
   }
 }
